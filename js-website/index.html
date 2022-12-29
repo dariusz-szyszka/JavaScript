@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      Beautiful country | Beautful people | Beautiful foundation
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="home-tab" class="active">Home</a></li>
+        <li><a href="sea.html" id="seas-tab">Sea</a></li>
+        <li><a href="mountains.html" id="mountains-tab">Mountains</a></li>
+        <li><a href="forests.html" id="forests-tab">Forests</a></li>
+      </ul>
+    </nav>
+    <h1>Enjoy your stay in Poland!</h1>
+    <main>
+      <h2>Quick intro to Poland</h2>
+      <section>
+        <p>Poland, officially the Republic of Poland, is a country in Central Europe. 
+          It is divided into 16 administrative provinces called voivodeships, 
+          covering an area of 312,696 km2 (120,733 sq mi). Poland has a population 
+          of over 38 million and is the fifth-most populous member state of the 
+          European Union. Warsaw is the nation's capital and largest metropolis. 
+          Other major cities include Kraków, Wrocław, Łódź, Poznań, Gdańsk, and Szczecin.</p>
+        <p>Poland has a temperate transitional climate and its territory traverses 
+          the Central European Plain, extending from Baltic Sea in the north to 
+          Sudeten and Carpathian Mountains in the south. The longest Polish river 
+          is the Vistula, and Poland's highest point is Mount Rysy, situated 
+          in the Tatra mountain range of the Carpathians. The country is bordered 
+          by Lithuania and Russia to the northeast, Belarus and Ukraine to the east, 
+          Slovakia and the Czech Republic to the south, and Germany to the west. 
+          It also shares maritime boundaries with Denmark and Sweden.</p>
+        <span>source: <i>https://www.wikipedia.org/</i></span>
+      </section>
+      <h3>Check out by yourself how wonderful my homeland is</h3>
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <span class="slide-number">1 / 5</span>
+          <img src="/photos/home/slide-castle-min.jpg" alt="Książ Castle"/>
+          <span class="description">Książ Castle in Wałbrzych</span>
+        </div>
+        <div class="slide fade">
+          <span class="slide-number">2 / 5</span>
+          <img src="/photos/home/slide-swamp-min.jpg" alt="Nature Reserve"/>
+          <span class="description">Nature Reserve "Torfowisko pod Zieleńcem"</span>
+        </div>
+        <div class="slide fade">
+          <span class="slide-number">3 / 5</span>
+          <img src="/photos/home/slide-tower-min.jpg" alt="Observation Tower"/>
+          <span class="description">Observation Tower in Mosina</span>
+        </div>
+        <div class="slide fade">
+          <span class="slide-number">4 / 5</span>
+          <img src="/photos/home/slide-lake-min.jpg" alt="Piaski Szczygliczka"/>
+          <span class="description">"Piaski Szczygliczka" Reservoir</span>
+        </div>
+        <div class="slide fade">
+          <span class="slide-number">5 / 5</span>
+          <img src="/photos/home/slide-winter-min.jpg" alt="Winter in Ostrów"/>
+          <span class="description">Winter in Ostrów Wielkopolski</span>
+        </div>
+        <a class="previous-btn" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next-btn" onclick="changeSlide(1)">&#10095;</a>
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <h2>Latest news</h2>
+      <article>
+        <h3>Colorful fall in the Tatra Mountains</h3>
+        <p>If you want to know how fall in Polish mountains looks like this year,
+          take a look at the photos shown below:</p>
+        <div class="photo-gallery">
+          <img
+            src="/photos/home/Tatra-1-min.jpg"
+            alt="Tatra Mountains photo 1"
+            onclick="openModal(),currentMiniSlide(1)"
+          />
+          <img
+            src="/photos/home/Tatra-2-min.jpg"
+            alt="Tatra Mountains photo 2"
+            onclick="openModal(),currentMiniSlide(2)"
+          />
+          <img
+            src="/photos/home/Tatra-3-min.jpg"
+            alt="Tatra Mountains photo 3"
+            onclick="openModal(),currentMiniSlide(3)"
+          />
+          <img
+            src="/photos/home/Tatra-4-min.jpg"
+            alt="Tatra Mountains photo 4"
+            onclick="openModal(),currentMiniSlide(4)"
+          />
+          <img
+            src="/photos/home/Tatra-5-min.jpg"
+            alt="Tatra Mountains photo 5"
+            onclick="openModal(),currentMiniSlide(5)"
+          />
+          <img
+            src="/photos/home/Tatra-6-min.jpg"
+            alt="Tatra Mountains photo 6"
+            onclick="openModal(),currentMiniSlide(6)"
+          />
+          <img
+            src="/photos/home/Tatra-7-min.jpg"
+            alt="Tatra Mountains photo 7"
+            onclick="openModal(),currentMiniSlide(7)"
+          />
+          <img
+            src="/photos/home/Tatra-8-min.jpg"
+            alt="Tatra Mountains photo 8"
+            onclick="openModal(),currentMiniSlide(8)"
+          />
+          <img
+            src="/photos/home/Tatra-9-min.jpg"
+            alt="Tatra Mountains photo 9"
+            onclick="openModal(),currentMiniSlide(9)"
+          />
+        </div>
+        <div id="gallery-modal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-container">
+            <div class="mini-slide">
+              <span class="mini-slide-number">1 / 9</span>
+              <img src="/photos/home/Tatra-1-min.jpg" alt="Tatra Mountains photo 1"/>
+            </div>
+            <div class="mini-slide">
+              <span class="mini-slide-number">2 / 9</span>
+              <img src="/photos/home/Tatra-2-min.jpg" alt="Tatra Mountains photo 2"/>
+            </div>
+            <div class="mini-slide">
+              <span class="mini-slide-number">3 / 9</span>
+              <img src="/photos/home/Tatra-3-min.jpg" alt="Tatra Mountains photo 3"/>
+            </div>
+            <div class="mini-slide">
+              <span class="mini-slide-number">4 / 9</span>
+              <img src="/photos/home/Tatra-4-min.jpg" alt="Tatra Mountains photo 4"/>
+            </div>
+            <div class="mini-slide">
+              <span class="mini-slide-number">5 / 9</span>
+              <img src="/photos/home/Tatra-5-min.jpg" alt="Tatra Mountains photo 5"/>
+            </div>
+            <div class="mini-slide">
+              <span class="mini-slide-number">6 / 9</span>
+              <img src="/photos/home/Tatra-6-min.jpg" alt="Tatra Mountains photo 6"/>
+            </div>
+            <div class="mini-slide">
+              <span class="mini-slide-number">7 / 9</span>
+              <img src="/photos/home/Tatra-7-min.jpg" alt="Tatra Mountains photo 7"/>
+            </div>
+            <div class="mini-slide">
+              <span class="mini-slide-number">8 / 9</span>
+              <img src="/photos/home/Tatra-8-min.jpg" alt="Tatra Mountains photo 8"/>
+            </div>
+            <div class="mini-slide">
+              <span class="mini-slide-number">9 / 9</span>
+              <img src="/photos/home/Tatra-9-min.jpg" alt="Tatra Mountains photo 9"/>
+            </div>
+            <a class="mini-previous-btn" onclick="changeMiniSlide(-1)">&#10094;</a>
+            <a class="mini-next-btn" onclick="changeMiniSlide(1)">&#10095;</a>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h3>Christmas Markets 2022</h3>
+        <p>If you want to feel Christmas atmosphere deeper, listen to carols, 
+          watch breathtaking performances, eat gingerbread or drink mulled wine, 
+          attend Christmas markets which are organized in vast majority 
+          of Polish citites on December. Links to most popular events:</p>
+          <ul>
+            <li>
+              <a
+                href="https://pik.wroclaw.pl/jarmark-bozonarodzeniowy-we-wroclawiu/"
+                target="_blank"
+              >
+                Wrocław Christmas market
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://pik.krakow.pl/jarmark-bozonarodzeniowy-w-krakowie/"
+                target="_blank"
+              >
+                Kraków Christmas market
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://pik.poznan.pl/jarmark-bozonarodzeniowy-betlejem-poznanskie/"
+                target="_blank"
+              >
+                Poznań Christmas market
+              </a>
+            </li>
+          </ul>
+      </article>
+    </aside>
+    <footer>
+      <section class="contact">
+        <h5>Contact:</h5>
+        <span>
+          Beautiful Poland Foundation<br>
+          al. Zwycięstwa 85<br>
+          63-400 Ostrów Wielkopolski<br>
+          (+48) 111-222-333<br>
+          <a href="mailto:bpf@foundations.gov.pl">bpf@foundations.gov.pl</a> 
+        </span>
+      </section>
+      <section class="about">
+        <h5>About us:</h5>
+        <span>
+          <a href="https://www.bpf.com/history">Our history</a><br>
+          <a href="https://www.bpf.com/mission">Our mission</a><br>
+          <a href="https://www.bpf.com/projects">Current projects</a><br>
+          <a href="https://www.bpf.com/join">Join us</a><br>
+          <a href="https://www.bpf.com/donate">Donate us</a><br>
+        </span>
+      </section>
+      <section class="follow">
+        <h5>Follow us on:</h5>
+        <span>
+          <a href="https://www.facebook.com/beautiful-poland-foundation" target="_blank">
+            <img src="/icons/facebook-icon.svg">
+          </a>
+          <a href="https://www.instagram.com/beautiful-poland-foundation" target="_blank">
+            <img src="/icons/instagram-icon.svg">
+          </a>
+          <a href="https://www.telegram.org/beautiful-poland-foundation" target="_blank">
+            <img src="/icons/telegram-icon.svg">
+          </a>
+          <a href="https://www.twitter.com/beautiful-poland-foundation" target="_blank">
+            <img src="/icons/twitter-icon.svg">
+          </a>          
+        </span>
+      </section>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

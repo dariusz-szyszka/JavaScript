@@ -1,0 +1,142 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  background-color: #7590ba;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16rem;
+  padding: 1rem;
+  border: 0.25rem solid #000;
+  border-radius: 1rem;
+  background-color: #e3cae0;
+  user-select: none;
+}
+
+.checkbox-container {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+span {
+  color: #f00;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding-top: 0.25rem;
+  visibility: hidden;
+}
+
+.fa-circle-xmark {
+  color: #f00;
+}
+
+.fa-circle-check {
+  color: #259e21;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+form {
+  display: grid;
+}
+
+label {
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+label > img {
+  width: 1.2rem;
+  transform: translateY(25%);
+}
+
+label > div {
+  height: 2rem;
+  border: 0.1rem solid #333;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  background-color: #ddd;
+  display: none;
+}
+
+.checkbox-label {
+  display: inline-block;
+  font-size: 0.65rem;
+}
+
+#emailToolTip {
+  position: absolute;
+  text-align: center;
+  width: 16.8rem;
+  transform: translate(-1rem, -2rem);
+}
+
+#phoneToolTip {
+  position: absolute;
+  text-align: center;
+  width: 16.8rem;
+  transform: translate(-1rem, -2rem);
+}
+
+input {
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+input:not([type="checkbox"]):not([type="submit"]) {
+  height: 2rem;
+  font-size: 1rem;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+#submit {
+  cursor: pointer;
+  width: fit-content;
+  margin: 0.5rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #b04c86;
+  box-shadow: 0 0.35rem #666;
+}
+
+#submit:hover {
+  color: #333;
+  background-color: #4ba34d;
+  border-color: #4ba34d;
+}
+
+#submit:active {
+  transform: translateY(0.2rem);
+  box-shadow: 0 0.15rem #333;
+}
+
+::selection {
+  color: #fff;
+  background: #000;
+}

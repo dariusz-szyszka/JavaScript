@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/875aa128ff.js" crossorigin="anonymous"></script>
+  <title>Form</title>
+</head>
+<body>
+  <main>
+    <div class="form-container">
+      <h1>Fill in the form</h1>
+      <form autocomplete="on" novalidate="novalidate">
+        <label for="firstName">First name:</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          required="true"
+          maxlength="20"
+          autofocus="true"
+          placeholder="Enter your first name"
+        />
+        <span id="firstNameError">This field is required</span><br>
+        <label for="lastName">Last name:</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          required="true"
+          maxlength="20"
+          placeholder="Enter your last name"
+        />
+        <span id="lastNameError">This field is required</span><br>
+        <label for="emailAddress">
+          <div id="emailToolTip">
+            Follow the pattern: [custom]@[domain].[tld] <br>
+            e.g. <b>michael.jordan@gmail.com</b>
+          </div>
+          Email address:
+          <img
+            id="emailIcon"
+            src="question-mark-icon.png"
+            alt="Question mark hint icon"
+          />
+        </label>
+        <input
+          type="email"
+          id="emailAddress"
+          name="emailAddress"
+          required="true"
+          maxlength="20"
+          placeholder="Enter your email address"
+        />
+        <span id="emailError">This field is required</span><br>
+        <label for="phoneNumber">
+          <div id="phoneToolTip">
+            Follow the pattern: [000]-[000]-[0000]<br>
+            e.g. <b>743-234-9012</b>
+          </div>
+          Phone number:
+          <img
+            id="phoneIcon"
+            src="question-mark-icon.png"
+            alt="Question mark hint icon"
+          />
+        </label>
+        <input
+          type="tel"
+          id="phoneNumber"
+          name="phoneNumber"
+          required="true"
+          maxlength="12"
+          placeholder="Enter your phone number"
+        />
+        <span id="phoneError">This field is required</span><br>
+        <label for="birthDate">Birth date:</label>
+        <input
+          type="date"
+          id="birthDate"
+          name="birthDate"
+          required="true"
+        />
+        <span id="birthDateError">This field is required</span><br>
+        <div class="checkbox-container">
+          <input
+          type="checkbox"
+          id="regulations"
+          name="regulations"
+          required="true"
+          >
+          <label for="regulations" class="checkbox-label">
+            I accept the rules and the regulations
+          </label>
+          <span id="regulationError">This field is required</span><br>
+        </div>
+        <input type="submit" id="submit" name="submit"/>
+      </form>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
